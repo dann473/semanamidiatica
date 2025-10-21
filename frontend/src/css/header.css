@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #10367D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header .logo {
+    width: 40px;
+    height: 40px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s
+}
+
+.header a:hover {
+    color: #1889CD;
+}
+
+/* ==== CABEÇALHO (TOPO) ==== */
+header {
+    width: 100%;
+    font-family: sans-serif;
+    position: sticky;
+    z-index: 1000;
+    /* Fica grudado no topo */
+    top: 0;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    border-bottom: #10367D 1px solid;
+    padding: 16px;
+    /* Espaço interno */
+    color: #272727;
+    font-weight: 700;
+}
+
+nav {
+    max-width: 1152px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+.footer-container {
+    background-color: #10367D;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li strong {
+    margin-bottom: 8px;
+}
+
+.footer-links strong {
+    font-size: 1.6rem;
+}

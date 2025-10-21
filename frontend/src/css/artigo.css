@@ -1,0 +1,94 @@
+.artigo {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.artigo h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 4px;
+    color: #10367d;
+    margin-top: 20px;
+}
+
+.artigo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #272727;
+}
+
+.publi {
+    width: 100em;
+    height: 20em;
+    margin: 20px 0;
+}
+
+.subtitulo{
+    font-size:1em;
+    color: #272727;
+    margin-bottom: 7em;
+}
+
+.image-card{
+    height: 20%;
+}
+
+/* ==== Figure/figcaption ==== */
+
+.container-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    align-items: flex-start; 
+}
+
+/* Figure ocupa metade do espaço */
+.figure-minimal {
+    margin: 0; 
+    flex: 0 0 50%; 
+}
+
+.figure-minimal img {
+    width: 95%; 
+    height: 400px; 
+    display: block; 
+    object-fit: cover; 
+}
+
+.figure-minimal figcaption {
+    padding: 15px 20px;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.figure-minimal .credit {
+    font-size: 0.8em;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Conteúdo de texto ocupa a outra metade */
+.container-card .texto-conteudo {
+    flex: 1; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+/* Parágrafos dentro do container-card */
+.container-card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #272727;
+    word-wrap: break-word; 
+}
+
+
+
