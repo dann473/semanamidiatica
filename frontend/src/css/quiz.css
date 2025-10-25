@@ -1,0 +1,165 @@
+/* Fonte principal Gabarito */
+body {
+  font-family: "Gabarito", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Área central do quiz */
+.quiz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cartão do quiz */
+.quiz-card {
+  position: relative;
+  background: linear-gradient(135deg, #10367d, #1889cd);
+  color: white;
+  padding: 50px;
+  border-radius: 25px;
+  width: 650px;
+  max-width: 90%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border: 4px solid #ffffff;
+  overflow: hidden;
+}
+
+/* Ícones de jornal e lupa, um em cada ponta */
+.quiz-card::before, .quiz-card::after {
+  position: absolute;
+  font-size: 80px;
+  color: white;
+  opacity: 0.08; /* efeito cavado */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Lado esquerdo: jornal (canto superior esquerdo) */
+.quiz-card::before {
+  content: "📰";
+  top: 10px;
+  left: 10px;
+}
+
+/* Lado direito: lupa (canto inferior direito) */
+.quiz-card::after {
+  content: "🔍";
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+/* Mantendo o conteúdo acima dos ícones */
+.quiz-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover sutil */
+.quiz-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Título dentro do quiz */
+.quiz-inner h1 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Pergunta */
+#question {
+  background: linear-gradient(135deg, #a6d3f7, #1889cd);
+  color: #10367d;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(16, 54, 125, 0.3);
+}
+
+/* Imagem da pergunta */
+.question-img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Botões das respostas */
+.btn-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  background: white;
+  color: #10367d;
+  border: 2px solid transparent;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  font-family: "Gabarito", sans-serif;
+}
+
+button:hover {
+  background: #a6d3f7;
+  border-color: #1800ad;
+  color: #1800ad;
+}
+
+/* Botão próxima / começar / jogar novamente */
+.next-btn {
+  margin-top: 20px;
+  display: inline-block;
+  background: #1800ad;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 12px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.next-btn:hover {
+  background: #10367d;
+}
+
+/* Resultado */
+.result {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+/* Respostas corretas e erradas */
+.correct {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.wrong {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}

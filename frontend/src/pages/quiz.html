@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Fake News</title>
+  <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cardquiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <div class="quiz-card">
+      <div class="quiz-inner">
+  <h1>Será que é Fake News?</h1>
+        <!-- TELA INICIAL -->
+        <div id="start-screen">
+          <p>Teste seus conhecimentos e descubra se você é um detetive digital!</p>
+          <button id="start-btn" class="next-btn">Começar</button>
+        </div>
+
+        <!-- TELA DO QUIZ -->
+        <div id="question-container" class="hidden">
+          <img id="question-img" class="question-img hidden" src="" alt="Imagem da pergunta">
+          <div id="question"></div>
+          <div id="answers" class="btn-grid"></div>
+        </div>
+
+        <button id="next-btn" class="next-btn hidden">Próxima</button>
+        <div id="result" class="result hidden"></div>
+        <button id="restart-btn" class="next-btn hidden">Jogar Novamente</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../scripts/script.js"></script>
+</body>
+</html>
